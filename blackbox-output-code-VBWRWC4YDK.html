@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Original Gangsters Cafe & Restaurant in Ranchi - Authentic meals, bold flavors, and retro ambiance. Order online or visit us!">
+    <meta name="keywords" content="cafe, restaurant, Ranchi, Original Gangsters, food, coffee, menu">
+    <title>Original Gangsters - Cafe & Restaurant</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400?text=Original+Gangsters+Cafe'); /* Replace with real image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .hero button {
+            background-color: #ffcc00;
+            color: #222;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background-color: #e6b800;
+        }
+        .about, .menu, .gallery, .testimonials, .contact, .order {
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .about h2, .menu h2, .gallery h2, .testimonials h2, .contact h2, .order h2 {
+            text-align: center;
+            color: #222;
+            margin-top: 0;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu li {
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .menu li h3 {
+            margin-top: 0;
+            color: #ffcc00;
+        }
+        .menu li button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .menu li button:hover {
+            background-color: #444;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        }
+        .testimonials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .testimonials li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact form, .order form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea, .order input, .order select, .order textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button, .order button {
+            background-color: #ffcc00;
+            color: #222;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact button:hover, .order button:hover {
+            background-color: #e6b800;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu li {
+                width: 80%;
+            }
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Original Gangsters</h1>
+        <p>Cafe & Restaurant</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <h2>Welcome to Original Gangsters</h2>
+        <p>Experience the bold flavors and retro vibe in the heart of Ranchi. Where every bite tells a story.</p>
+        <button onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Located at Shop No G 3/4, Galaxia Mall, Opposite Kali Mandir, Piska More, Ranchi-834005, Jharkhand, Original Gangsters is your go-to spot for authentic cafe delights and hearty restaurant meals. Inspired by the classic gangster era, we bring you a unique blend of comfort food, specialty coffees, and an ambiance that's as bold as our name.</p>
+        <p>Visit us for an unforgettable dining experience!</p>
+    </section>
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>
+                <h3>Classic Gangster Burger</h3>
+                <p>Juicy beef patty with cheese, lettuce, and our secret sauce. ₹250</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+            <li>
+                <h3>Retro Coffee Special</h3>
+                <p>Espresso with a twist of vanilla and whipped cream. ₹150</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+            <li>
+                <h3>Gangster Pasta</h3>
+                <p>Spicy tomato-based pasta with herbs and parmesan. ₹220</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+            <li>
+                <h3>Decadent Chocolate Cake</h3>
+                <p>Rich, moist cake perfect for sharing. ₹180</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+            <li>
+                <h3>Fresh Salad Bowl</h3>
+                <p>Mixed greens with vinaigrette dressing. ₹120</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+            <li>
+                <h3>Signature Mocktail</h3>
+                <p>Non-alcoholic blend of fruits and spices. ₹100</p>
+                <button onclick="alert('Added to cart! Proceed to Order section.')">Add to Order</button>
+            </li>
+        </ul>
+        <p style="text-align: center; margin-top: 20px;">*Prices are indicative and subject to change. Full menu available at the cafe.</p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://via.placeholder.com/300x200?text=Cafe+Interior" alt="Cafe Interior">
+        <img src="https://via.placeholder.com/300x200?text=Delicious+Burger" alt="Delicious Burger">
+        <img src="https://via.placeholder.com/300x200?text=Coffee+Special" alt="Coffee Special">
+        <img src="https://via.placeholder.com/300x200?text=Ambiance" alt="Retro Ambiance">
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <ul>
+            <li>"The best burger in Ranchi! The gangster theme is fun and the food is top-notch." - Ravi K.</li>
+            <li>"Love the coffee specials. A must-visit for coffee lovers." - Priya S.</li>
+            <li>"Great ambiance and friendly staff. Highly recommend!" - Amit T.</li>
+        </ul>
+    </section>
+    <section id="order" class="order">
+        <h2>Place Your Order</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree URL -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <select name="item" required>
+                <option value="">Select Item</option>
+                <option value="Classic Gangster Burger">Classic Gangster Burger - ₹250</option>
+                <option value="Retro Coffee Special">Retro Coffee Special - ₹150</option>
+                <option value="Gangster Pasta">Gangster Pasta - ₹220</option>
+                <option value="Decadent Chocolate Cake">Decadent Chocolate Cake - ₹180</option>
+                <option value="Fresh Salad Bowl">Fresh Salad Bowl - ₹120</option>
+                <option value="Signature Mocktail">Signature Mocktail - ₹100</option>
+            </select>
+            <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+            <textarea name="special-requests" placeholder="Special Requests"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Shop No G 3/4, Galaxia Mall, Opposite Kali Mandir, Piska More, Ranchi-834005, Jharkhand</p>
+        <p><strong>Phone:</strong> 08401371236</p>
+        <p><strong>Website:</strong> <a href="https://jsdl.in/DT-51ZHNHD8HTW" target="_blank">https://jsdl.in/DT-51ZHNHD8HTW</a></p>
+        <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree URL -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Original Gangsters Cafe & Restaurant. All rights reserved. Designed uniquely for authenticity.</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+        <p><a href="#contact">Buy This Website</a> - Contact us for full ownership and customization!</p>
+    </footer>
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
